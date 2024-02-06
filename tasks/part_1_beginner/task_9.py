@@ -1,1 +1,5 @@
-# TODO: Пожалуйста, добавьте свой код ниже с комментариями и понятными названиями переменных.
+# user_line = input("")
+# print(user_line.count("                                              ") + 1)
+sentence = input("")
+words = sentence.rsplit()
+print(len(words))
