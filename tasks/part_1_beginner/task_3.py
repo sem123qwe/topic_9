@@ -1,7 +1,10 @@
-user_input = input("")
-number = len(user_input)
-num = 1
-while num < number + 1:
-    peramid = user_input[:num:]
-    print(peramid)
-    num += 1
+user_input: str = input()
+
+is_printed: bool = False
+out_line: str = ""
+for char in user_input:
+    # if is_printed == True or char != " ":
+    if is_printed or char != " ":
+        out_line += char
+        print(out_line)
+        is_printed = True

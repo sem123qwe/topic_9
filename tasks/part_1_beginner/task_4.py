@@ -1,9 +1,8 @@
-user_input = input("")
-colecton = "0987654321"
-num = 0
-while num < len(user_input):
-    if user_input[num] in colecton:
+user_input = input()
+digits = "0987654321"
 
-        print(user_input[num], end="$ ")
-
-    num += 1
+i = 0
+while i < len(user_input):
+    if user_input[i] in digits:
+        print(user_input[i], end="₽ ")
+    i += 1

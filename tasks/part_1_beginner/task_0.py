@@ -1,4 +1,7 @@
-user_input = input("")
-a = "a"
-last_line = user_input + a
-print(last_line.find("a"))
+user_input: str = input()
+
+count: int = 0
+for _ in user_input:
+    count += 1
+
+print(count)

@@ -1,3 +1,7 @@
-user_line = input("")
-users_laters = input("")
-print(user_line.find(users_laters))
+user_line = input()
+char = input()
+
+if char not in user_line:
+    print('-1')
+else:
+    ...  # Используйте цикл
