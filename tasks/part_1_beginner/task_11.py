@@ -1,6 +1,6 @@
-user_line = input()
-correct_symbls = "0987654321+-."
-count = 0
+user_line: str = input()
+correct_symbls: str = "0987654321+-."
+count: int = 0
 
 
 # num = 0

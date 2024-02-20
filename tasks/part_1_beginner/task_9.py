@@ -1,7 +1,7 @@
-user_input = input()
-count = 0
+user_input: str = input()
+count: int = 0
 
-num = 0
+num: int = 0
 size_line = len(user_input)
 while num < size_line:
     if user_input[num] == " ":

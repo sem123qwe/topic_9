@@ -1,7 +1,7 @@
-user_line = input("")
-num = 0
-chot = ""
-nechot = ""
+user_line: str = input("")
+num: int = 0
+chot: str = ""
+nechot: str = ""
 while num < len(user_line):
     if num % 2 == 0:
         chot += user_line[num]
@@ -10,4 +10,3 @@ while num < len(user_line):
     num += 1
 print(chot)
 print(nechot)
-# TODO (подумай)

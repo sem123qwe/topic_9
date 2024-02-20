@@ -1,9 +1,9 @@
-user_line = input()
-user_symbls = input()
-correct_line = ""
+user_line: str = input()
+user_symbls: str = input()
+correct_line: str = ""
 
-count = len(user_line)
-num = 0
+count: int = len(user_line)
+num: int = 0
 
 
 while num < count:
