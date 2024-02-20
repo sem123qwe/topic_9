@@ -1,16 +1,18 @@
-en_vowels: str = "АЕЁИОУЫЭЮЯAEIOU"
-en_consonants: str = "БВГДЖЗЙКЛМНПРСТФХЦЧШЩЪЬBCDFGHJKLMNPQRSTVWXYZ"
+VOWELS: str = "АЕЁИОУЫЭЮЯAEIOU"
+CONSONANTS: str = ("БВГДЖЗЙКЛМНПРСТФХЦЧШЩЪЬBCDFGHJKLMNPQRSTVWXYZ"
+                   "бвгджзйклмнпрстфхцчшщъьbcdfghjklmnpqrstvwxyz")
 
-chat: str = input("").upper()
+chat: str = input()
+
 num: int = 0
-counter_vowels: str = ""
-counter_consonants: str = ""
+counter_vowels: int = 0
+counter_consonants: int = 0
 while num < len(chat):
-    if chat[num] in en_consonants:
-        counter_vowels += chat[num]
-    elif chat[num] in en_vowels:
-        counter_consonants += chat[num]
+    if chat[num] in CONSONANTS:
+        counter_vowels += 1
+    elif chat[num] in VOWELS:
+        counter_consonants += 1
     num += 1
 
-print(len(counter_consonants))
-print(len(counter_vowels))
+print(counter_consonants)
+print(counter_vowels)

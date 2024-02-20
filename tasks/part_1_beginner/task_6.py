@@ -1,12 +1,18 @@
-user_line: str = input("")
+user_line: str = input()
 num: int = 0
-chot: str = ""
-nechot: str = ""
+
+even: str = ""
+odd: str = ""
 while num < len(user_line):
     if num % 2 == 0:
-        chot += user_line[num]
+        even += user_line[num]
     else:
-        nechot += user_line[num]
+        odd += user_line[num]
     num += 1
-print(chot)
-print(nechot)
+print(even)
+print(odd)
+
+
+# --------------- Option 2
+
+print(user_line[::2], user_line[1::2], sep="\n")

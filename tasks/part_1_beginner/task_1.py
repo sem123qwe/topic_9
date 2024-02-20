@@ -1,11 +1,23 @@
-user_input = input()
-right_line = ""
-num = 0
-calculate = len(user_input)
-while num < calculate:
-    if user_input[num] == user_input[num - 1]:
-        right_line + user_input[num]
-    else:
-        continue
-    num += 1
+user_input: str = input()
+
+right_line: str = ""
+
+calculate: int = len(user_input)
+i = 0
+while i < calculate:
+    pass
 print(right_line)
+
+
+# ------------------- Example
+
+toys: str = 'yytreeevvbbd'
+unique_toys: str = ''
+
+i: int = 0
+length: int = len(toys)
+while i < length:
+    if toys[i] not in unique_toys:
+        unique_toys += toys[i]
+
+    i += 1
