@@ -1,9 +1,11 @@
 user_input = input()
-
-i = 0
-length: int = len(user_input)
-while i < length:
-    if user_input[i] not in ...:
-        pass
-
-    i += 1
+right_line = ""
+num = 0
+calculate = len(user_input)
+while num < calculate:
+    if user_input[num] == user_input[num - 1]:
+        right_line + user_input[num]
+    else:
+        continue
+    num += 1
+print(right_line)
