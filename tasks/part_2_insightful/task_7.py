@@ -1,3 +1,6 @@
+# TODO: Логика задачи верна, только её необходимо решить
+#  используя встроенные методы строк
+
 while True:
     ALPHABET: str = ("АЕЁИОУЫЭЮЯAEIOU"
                      "аеёиоуыэюяaeiou"
@@ -23,9 +26,9 @@ while True:
         print("Пароль должен заканчиваться буквой или цифрой")
         break
 
+    # TODO: Ниже цикл нужно убрать, задача решается с помощью одного цикла
     count_num = 0
     count_alp = 0
-
     i = 0
     while i < laught:
         if ALPHABET in user_line[i]:

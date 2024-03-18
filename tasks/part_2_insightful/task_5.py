@@ -1,3 +1,5 @@
+# TODO: Неверное решение, используйте методы str.maketrans() и str.translate()
+#  В теории есть ссылка на эти методы, почитайте про них
 VOWELS: str = "АЕЁИОУЫЭЮЯAEIOUаеёиоуыэюяaeiou"
 
 user_input = input()
