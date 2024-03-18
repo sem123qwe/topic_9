@@ -1,1 +1,3 @@
-# TODO: Пожалуйста, добавьте свой код ниже с комментариями и понятными названиями переменных.
+user_line = input()
+symble = input()
+print(user_line.count(symble))
