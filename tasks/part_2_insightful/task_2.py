@@ -2,17 +2,12 @@
 #  Рекомендую использовать цикл for вместо while,
 #  тогда получится компактный код
 
-user_line = input()
+user_line = input().title()
 correct_line = ""
-b = " "
-
-i = 0
-laught = len(user_line)
-is_word = False
-while i < laught:
+for i in range(len(user_line)):
     if user_line[i] == "*":
         correct_line += "\n"
     else:
         correct_line += user_line[i]
-    i += 1
-print(correct_line, )
+
+print(correct_line)
