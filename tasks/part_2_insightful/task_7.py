@@ -1,42 +1,23 @@
-ALPHABET: str = """АЕЁИОУЫЭЮЯAEIOU
-                     аеёиоуыэюяaeiou
-                     БВГДЖЗЙКЛМНПРСТФХЦЧШЩЪЬ
-                     BCDFGHJKLMNPQRSTVWXYZ
-                     бвгджзйклмнпрстфхцчшщъь
-                     bcdfghjklmnpqrstvwxyz"""
-NUMBERS = "0987654321"
+while True:
+    users_password = input()
 
-while True:   
-    message = input()
-    laught = len(message)
-    
-    if message.isalnum() is True:
-            print("Хотите добавить специальные символы?(y/N):")
-            answer = input()
-            match answer:
-                case "y" | "Y":
-                    continue
-                case "n" | "N":
-                    print("Пароль принят!")
-                    break
-    elif laught < 8:
+    if len(users_password) < 8: 
         print("Пароль должен быть минимум 8 символов")
-        continue
-    elif laught > 255:
+    elif len(users_password) > 255:
         print("Пароль не может быть больше 255 символов")
-        continue
-    elif message.isalpha():
-        print("Пароль не должен состоять только из буквенных символов")
-        continue
-    elif message.isdecimal():
-        print("Пароль не может начинаться с цифры")
-        continue
-    
-    elif message[::1] is not ALPHABET or message[::1] is not NUMBERS:
-        print("Пароль должен заканчиваться буквой или цифрой")
-        continue
-
-    
-    
-
-
+    elif users_password.isalpha():
+        print("Пароль не должен состоять только из буквенных символов.")
+    elif users_password[-1].isalnum() is False:
+        print("Пароль должен заканчиваться буквой или цифрой.")
+    elif users_password.isdigit():
+        print("Пароль не должен состоять только из цифр.")   
+    elif users_password[1].isdigit():
+        print("Пароль не может начинаться с цифры.")
+    elif users_password.isalnum:
+        # print("ПРЕДУПРЕЖДЕНИЕ: Ваш пароль состоит только из букв и цифр")
+        # print("Хотите добавить специальные символы?")
+        user_answer = input().lower
+        if user_answer == "n":
+            print("Пароль принят!")
+    else:
+        print("Пароль принят!")
