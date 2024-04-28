@@ -1,11 +1,22 @@
-# TODO: Нет решений
+VOWELS: str = "аеёиоуыэюя"
 
-VOWELS = "АЕЁИОУЫЭЮЯаеёиоуыэюя"
+names: list[str] = input().split()
 
-user_line = input()
+max_vowels: int = 0
+result: list[str] = []
+for name in names:
 
-laught = len()
-i = 0
+    temp_vowels = 0
+    for let in name.lower():
+        if let in VOWELS:
+            temp_vowels += 1
 
-while ... :
-    ...
+    if temp_vowels > max_vowels:
+        result.clear()
+        result.append(name)
+        max_vowels = temp_vowels
+    elif temp_vowels == max_vowels:
+        result.append(name)
+
+for item in result:
+    print(item.capitalize())
