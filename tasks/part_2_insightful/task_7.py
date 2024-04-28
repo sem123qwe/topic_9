@@ -14,10 +14,10 @@ while True:
     elif users_password[1].isdigit():
         print("Пароль не может начинаться с цифры.")
     elif users_password.isalnum:
-        # print("ПРЕДУПРЕЖДЕНИЕ: Ваш пароль состоит только из букв и цифр")
-        # print("Хотите добавить специальные символы?")
+        print("ПРЕДУПРЕЖДЕНИЕ: Ваш пароль состоит только из букв и цифр")
+        print("Хотите добавить специальные символы?")
         user_answer = input().lower
-        if user_answer == "n":
-            print("Пароль принят!")
+    elif user_answer is "n":
+        print("Пароль принят!")
     else:
         print("Пароль принят!")

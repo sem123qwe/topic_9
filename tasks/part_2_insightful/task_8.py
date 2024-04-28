@@ -1,11 +1,4 @@
 # TODO: Нет решений
+name_list: str = input().lower().split()
 
-VOWELS = "АЕЁИОУЫЭЮЯаеёиоуыэюя"
 
-user_line = input()
-
-laught = len()
-i = 0
-
-while ... :
-    ...

@@ -48,25 +48,10 @@
 # print(task)
 
 # TODO: Продолжайте решение задачи
-ALPHABET = "аеёиоуыэюяaeiouпрстфхцчшщъьbcdfghjklmnpqrstvwxyzбвгджзйклмн"
+massage: str = input().lower
 
-user_line = input().lower()
-correct_line = ""
+chars = " ,-"
+for chsr in chars:
+    massage = massage.replace(chars, "")
 
-i = 0
-laught = len(user_line)
-while i < laught:
-    if user_line[i] in ALPHABET:
-        correct_line += user_line[i]
-        i += 1
-    else:
-        pass
-        i += 1 
-
-if correct_line == correct_line[::-1]:
-    print(True)
-else:
-    print(False)
-
-
-
+print(massage == massage[::-1])
