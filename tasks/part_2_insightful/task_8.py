@@ -12,6 +12,7 @@ for name in names:
             temp_vowels += 1
 
     if temp_vowels > max_vowels:
+        # result = []  # Ошибка
         result.clear()
         result.append(name)
         max_vowels = temp_vowels
