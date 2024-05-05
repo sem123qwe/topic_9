@@ -1,3 +1,3 @@
 # TODO: Пожалуйста, добавьте свой код ниже с комментариями и понятными названиями переменных.
-hjk = "cBA123FeD456"
-print(hjk[-1].isalnum())
+user_input = int(input())
+print(user_input == 1)

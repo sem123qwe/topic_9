@@ -5,7 +5,7 @@ camelCase: str= "camel"
 PascalCase: str = "Pascal"
 snake_case: str = "snake_"
 
-clean_line = ""
+clean_line: str = ""
 
 for i in user_input:
     clean_line += i.capitalize()

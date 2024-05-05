@@ -50,7 +50,7 @@
 # TODO: Продолжайте решение задачи
 massage: str = input().lower
 
-chars = " ,-"
+chars: str = " ,-"
 for chsr in chars:
     massage = massage.replace(chars, "")
 
