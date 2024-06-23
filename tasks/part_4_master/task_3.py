@@ -1,21 +1,22 @@
-IPv4 = int(input())
+bits: int = int(input())
+convert: str = bin(bits)[2:].zfill(32)
 
-convert = str(bin(IPv4))[2::]
+result: list[str] = []
+left: int = 0
+for i in range(8, 33, 8):
+    num = str(int(convert[left:i], 2))
+    result.append(num)
+    left = i
 
-spicoc = ''
+    # convert[left: i]
+    # convert[0:8]
+    # left = i
+    # convert[8:16]
+    #
+    # left = i
+    # convert[16:24]
+    #
+    # left = i
+    # convert[24:32]
 
-for i in convert:
-    if int(i) % 8 == 0:
-        spicoc += i    
-    elif int(i) % 8 != 0:
-        spicoc += i + '.'
-
-print(convert)
-print(spicoc)
-
-        
-
-
-
-
-
+print('.'.join(result))

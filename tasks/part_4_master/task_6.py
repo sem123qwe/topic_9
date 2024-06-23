@@ -1,18 +1,15 @@
-# while True:    
-#     user_massege = input()
-#     slovar = ''
+line: str = input()
 
-#     for i in user_massege:
-#         if i in slovar:
-#             print('False')
-#             break
-#         elif i not in slovar:
-#             slovar += i
+flag: bool = False
+length: int = len(line)
 
-#             print('True')
-
-
-
-for i in range(3,8,2):
-    if i % 3:
-        print(i)
+for i in range(length):
+    for j in range(length):
+        if line[i] == line[j] and i != j:
+            flag = True
+            break
+    if flag:
+        print(False)
+        break
+else:
+    print(True)

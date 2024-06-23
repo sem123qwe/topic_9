@@ -1,4 +1,4 @@
-PascalCase = input()
+PascalCase = input().strip()
 snake_case = ''
 
 for i in range(len(PascalCase)):
@@ -7,7 +7,18 @@ for i in range(len(PascalCase)):
         snake_case += letter.lower()
     elif letter == letter.capitalize():
         snake_case += '_' + letter.lower()
-    elif letter == letter.lower():
+    elif letter.islower():
         snake_case += letter
 
-print(snake_case) 
+print(snake_case)
+
+# №2
+line: str = input().strip()
+
+result: str = line[0].lower()
+for char in line[1:]:
+    if char.isupper():
+        result += '_'
+    result += char.lower()
+
+print(result)
